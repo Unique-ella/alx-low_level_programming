@@ -7,19 +7,16 @@
  * Return: Always 0.
  */
 
-int main(void)
-{
-	char letter;
+#include <stdio.h>
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-
-	{
-	if (letter != 'e' && letter != 'q')
-	putchar(letter);
-	}
-
-	putchar('\n');
-
-	return (0);
+int main() {
+    int i;
+    
+    for (i = 0; i <= 9; i++) {
+        printf("%d", i);
+    }
+    
+    printf("\n");
+    
+    return 0;
 }
-
