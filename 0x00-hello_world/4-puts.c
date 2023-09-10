@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * Entry point - A program that will print a line of text with a new line
- *
- * Return : Always 0;
+ * main - this is the main put function
+ * Return: 0
  */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n");
-	return (0);
+	puts("\"Programming is like building a multilingual puzzle");
+		return (0);
 }
+
