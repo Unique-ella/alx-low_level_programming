@@ -1,28 +1,49 @@
-/*
- * File: 101-natural.c
- * Auth: vincent kip
- */
+#include "main.h"
+
 
 #include <stdio.h>
 
+
 /**
- * main - Lists all the natural numbers below 1024 (excluded)
- *        that are multiples of 3 or 5.
- *
+ * print_to_98 - print a program to 98
+ * @n: The number to start printing
  * Return: Always 0.
  */
-int main(void)
+
+
+void print_to_98(int n)
 {
-	int i, sum = 0;
-
-	for (i = 0; i < 1024; i++)
+	if (n <= 98)
 	{
-		if ((i % 3) == 0 || (i % 5) == 0)
-			sum += i;
+	for (; n <= 98; n++)
+	{
+	if (n == 98)
+	{
+	printf("%d", n);
+	printf("\n");
+	break;
 	}
-
-	printf("%d\n", sum);
-
-	return (0);
+	else
+	{
+	printf("%d, ", n);
+	}
+	}
+	}
+	else
+	{
+	for (; n >= 98; n--)
+	{
+	if (n == 98)
+	{
+	printf("%d", n);
+	printf("\n");
+	break;
+	}
+	else
+	{
+		printf("%d, ", n);
+	}
+	}
+	}
 }
 
